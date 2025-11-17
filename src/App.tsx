@@ -38,6 +38,8 @@ import Producter from "./card/Ade";
 import ProductCategory from "./pages/categories/ProductCategory";
 import PrivateRoute from "./routing/PrivateRoute";
 
+import Services from "./statics/Services";
+
 
 const queryClient = new QueryClient();
 
@@ -73,6 +75,7 @@ const AppContent: React.FC = () => {
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/ade" element={<Producter />} />
+        <Route path="services" element={<Services/>} />
       </Route>
 
       {/* Protected routes */}
