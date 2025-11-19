@@ -43,6 +43,8 @@ import Producter from "./card/Ade";
 import ProductCategory from "./pages/categories/ProductCategory";
 import PrivateRoute from "./routing/PrivateRoute";
 
+import Services from "./statics/Services";
+
 const queryClient = new QueryClient();
 
 const App: React.FC = () => {
@@ -82,6 +84,7 @@ const AppContent: React.FC = () => {
         <Route path="/ade" element={<Producter />} />
         {/* <Route path="/orders/:id" element={<Confirm />} /> */}
       </Route>
+        <Route path="/services" element={<Services/>}/>
 
       {/* Protected routes */}
       <Route element={<PrivateRoute isAuthenticated={isAuthenticated} />}>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import firstServiceBaby from "../assets/firstServiceBaby.png";
 import serviceHeroImage from "../assets/serviceHeroImage.png";
-import Header from "./Header";
+// import Header from "./Header";
 
 import service1Pic from "../assets/service1Pic.png";
 import service2Pic from "../assets/service2Pic.png";
@@ -118,7 +118,7 @@ const Services = () => {
 
   return (
     <div className="bg-white font-sans">
-      <Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      {/* <Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} /> */}
 
       {/* Hero Section */}
       <section className="relative bg-gray-200">
@@ -335,27 +335,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Newsletter Subscription Section */}
-      <section className="bg-[#0080A0] py-12 px-6">
-        <div className="container mx-auto text-center max-w-2xl">
-          <h2 className="text-3xl font-bold text-white">
-            Subscribe to Newsletter
-          </h2>
-          <form className="mt-6 flex flex-col sm:flex-row gap-4">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="flex-grow px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-[#F9A826]"
-            />
-            <button
-              type="submit"
-              className="bg-white text-[#0080A0] font-bold py-3 px-8 rounded-lg"
-            >
-              Subscribe to Newsletter
-            </button>
-          </form>
-        </div>
-      </section>
     </div>
   );
 };
