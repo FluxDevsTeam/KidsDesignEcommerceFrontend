@@ -45,6 +45,10 @@ import PrivateRoute from "./routing/PrivateRoute";
 
 import StaticsLayout from "./statics/StaticsLayout";
 import Services from "./statics/Services";
+import Industries from "./statics/Industries";
+import Consultation from "./statics/Consultation";
+import Plans from "./statics/Plans";
+import Blogs from "./statics/Blogs";
 
 const queryClient = new QueryClient();
 
@@ -88,6 +92,10 @@ const AppContent: React.FC = () => {
 
       <Route element={<StaticsLayout/>}>
         <Route path="/services" element={<Services/>}/>
+        <Route path="/industries" element={<Industries/>}/>
+        <Route path="/consultation" element={<Consultation/>}/>
+        <Route path="/plans" element={<Plans/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
 
       </Route>
 
