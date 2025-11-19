@@ -1,13 +1,16 @@
+import React, { useState } from "react";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import Footer from "@/components/Footer";
 
 const StaticsLayout: React.FC = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
       <div className="min-h-screen flex flex-col">
-    <Header />
+    <Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
   
-        <main className="flex-1 mt-[90px] md:mt-28">  
+        <main className="">  
         {/* <div className='md:block hidden'>    <Breadcrumbs/> </div> */}
           <Outlet /> 
         </main>
